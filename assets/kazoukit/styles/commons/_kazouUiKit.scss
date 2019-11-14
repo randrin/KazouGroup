@@ -1,0 +1,487 @@
+/* Body */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover,
+a:focus {
+  color: $shuttle-grey;
+}
+
+/* Foundation 5 customization */
+.grid--custom .row {
+  padding: 0;
+  max-width: none;
+  @include medium {
+    padding: 0 30px;
+  }
+  @include large {
+    padding: 0 32px;
+  }
+}
+
+.grid--custom .row.expanded {
+  padding: 0;
+}
+
+.grid--custom .columns,
+.grid--custom .column {
+  padding: 0 15px;
+}
+
+.grid--custom .row[class*="-collapse"] .columns,
+.grid--custom .row[class*="-collapse"] .column {
+  padding: 0;
+}
+/***/
+
+.btn {
+  padding: unset !important;
+}
+
+/* Bottoni */
+
+.kazou-button {
+  display: inline-block;
+  min-width: 144px;
+  max-width: 318px;
+  height: 40px;
+  padding: 14px 20px;
+  border-radius: 20px;
+  font-family: "OpenSans-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  @media only screen and (min-width: 767px) {
+    min-width: 210px;
+    max-width: 330px;
+  }
+  @media only screen and (min-width: 992px) {
+    min-width: 160px;
+    max-width: 350px;
+  }
+  &.red-btn {
+    color: $white;
+    background-color: $fire-engine-red;
+    border: solid 1px $fire-engine-red;
+    @media only screen and (min-width: 992px) {
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(to left, $falu-red, $fire-engine-red);
+        border: none;
+        padding: 15px 21px;
+      }
+    }
+  }
+  &.red-outline-btn {
+    color: $fire-engine-red;
+    border: solid 1px $fire-engine-red;
+    background: $white;
+    @media only screen and (min-width: 992px) {
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(to right, $white, $coral-candy);
+      }
+    }
+  }
+  &.grey-outline-btn {
+    color: $shuttle-grey;
+    border: solid 1px $shuttle-grey;
+    background: $white;
+    @media only screen and (min-width: 992px) {
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(to right, $white, $white-lilac);
+      }
+    }
+  }
+  &.white-outline-btn {
+    border: solid 1px $white;
+    color: $white;
+    @media only screen and (min-width: 992px) {
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(to right, $white, $grey-chateau);
+        color: $shuttle-grey;
+        border: none;
+        padding: 15px 21px;
+      }
+    }
+  }
+  &.white-btn {
+    color: $shuttle-grey;
+    background-color: $white;
+    border: 1px solid $white;
+    @media only screen and (min-width: 992px) {
+      &:hover,
+      &:focus {
+        color: $shuttle-grey;
+        background-image: linear-gradient(to right, $white, $grey-chateau);
+        border: none;
+        padding: 15px 21px;
+      }
+    }
+  }
+}
+
+/* ---------- */
+
+/* Accessibility Underlined All links */
+
+.kazou-link a {
+  text-decoration: underline;
+}
+
+/* ---------- */
+
+/* Arrows */
+
+.arrow-style {
+  position: relative;
+  height: 40px;
+  width: 65px;
+  cursor: pointer;
+}
+
+.body-arrow {
+  width: 37px;
+  border-bottom: solid 2px $fire-engine-red;
+  position: absolute;
+  top: 50%;
+  transition: width 300ms;
+}
+
+.head-arrow {
+  width: 15.7px;
+  height: 15.7px;
+  transform: rotate(-45deg);
+  border-right: solid 1px $shuttle-grey;
+  border-bottom: solid 1px $shuttle-grey;
+  position: absolute;
+  margin-top: -8.29px;
+  left: 18.5px;
+  position: absolute;
+  top: 21px;
+  transition: left 300ms;
+}
+
+.white-head-arrow {
+  border-right: solid 1px $white;
+  border-bottom: solid 1px $white;
+}
+
+.white-body-arrow {
+  border-bottom: solid 1px $white;
+}
+
+.arrow-style {
+  display: inline-block;
+}
+
+.arrow-style:hover .body-arrow,
+.arrow-style:focus .body-arrow {
+  width: 57px;
+  transition: width 300ms;
+}
+
+.arrow-style:hover .head-arrow,
+.arrow-style:focus .head-arrow {
+  left: 38.5px;
+  transition: left 300ms;
+}
+
+/* --------------- */
+
+/* Deep link */
+
+.deepLink {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  color: $shuttle-grey;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  display: inline-block;
+
+  .deepLink-arrow::after {
+    content: "";
+    position: relative;
+    left: 3px;
+    top: -2px;
+    transition: left 300ms;
+    border: solid;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  &:hover,
+  &:focus {
+    .deepLink-arrow::after {
+      left: 15px;
+      transition: left 300ms;
+    }
+  }
+}
+
+/* -------- */
+
+/* Animazioni testo sottolineato - Header vecchio nostro: eliminare */
+
+.container-txt-to-underline {
+  display: inline-block;
+}
+
+.txt-to-underline {
+  cursor: pointer;
+  height: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  color: $shuttle-grey;
+}
+
+.underline-txt {
+  width: 0;
+  cursor: pointer;
+  border-top: 1px solid $fire-engine-red;
+  transition: width 300ms;
+  margin: auto;
+}
+
+.menu-span.active:hover .underline-txt,
+.menu-span.active:focus .underline-txt {
+  width: 100%;
+  transition: width 300ms;
+}
+
+/* to use the class whit a black background you have to add the classes below on your css 
+file and remove -black to the clss name */
+
+/* black-select */
+
+.select-selected-black {
+  border-color: $white;
+  background-color: $maire;
+}
+
+.select-items-black div,
+.select-selected-black {
+  color: $white;
+}
+
+.select-items-black {
+  background-color: $maire;
+  border-color: $white;
+}
+
+/* -------------- */
+
+/* ----- General use ----- */
+
+.display-none,
+.gradient-none {
+  display: none;
+}
+
+/* -------------- */
+
+/* ----- Module header ----- */
+
+.component-wrapper {
+  padding-top: 30px;
+}
+
+.module-main-content {
+  margin-top: 20px;
+}
+
+/* -------------- */
+
+/* ----- Themes ----- */
+
+/* ----- CR - Remove white space ----- */
+@media only screen and (max-width: 767px) {
+  .white-space {
+    padding-top: 0;
+    .module-main-content {
+      margin-top: 0;
+    }
+  }
+}
+
+/* Light theme is the default, no additional classes needed */
+
+/* Dark theme can be applied either by adding a 'dark-theme' class to the general container of the page, or component by component following their own instructions. */
+
+.black-theme {
+  .heroCarousel-wrapper {
+    .hero-carousel-item {
+      background: $nero;
+    }
+    .slick-dots {
+      background-color: $nero;
+    }
+  }
+  .editorialCarousel-wrapper {
+    background-color: $nero;
+    color: $white;
+    .editorialCarousel-title {
+      color: $white;
+    }
+  }
+  .alternateBanner-wrapper {
+    background: $nero;
+    .container-content {
+      background: $nero;
+    }
+    color: $white;
+    .title-alternate {
+      color: $white;
+    }
+    .deepLink {
+      color: $white;
+    }
+    .slick-dots {
+      background-color: $nero;
+    }
+  }
+}
+.dark-theme {
+  .heroCarousel-wrapper {
+    .hero-carousel-item {
+      background-image: linear-gradient($shuttle-grey, $maire);
+    }
+  }
+  .alternateBanner-wrapper {
+    padding-top: 0;
+    .title-alternate {
+      display: none;
+    }
+    .cta-alternate {
+      display: none;
+    }
+    .module-main-content {
+      margin-top: 0;
+    }
+    .container-content {
+      background-image: linear-gradient($shuttle-grey, $maire);
+      color: $white;
+    }
+  }
+  .relatedStoriesSlider-wrapper {
+    background-color: $maire;
+    .slick-prev-container,
+    .slick-next-container {
+      background-color: rgba(0, 0, 0, 1);
+    }
+    .slick-prev-container:hover,
+    .slick-next-container:hover,
+    .slick-prev-container:focus,
+    .slick-next-container:focus {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .slick-prev-container:focus-within,
+    .slick-next-container:focus-within {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .slider-related-stories-title {
+      color: $white;
+    }
+    .slider-related-stories {
+      .slider span {
+        color: $white;
+      }
+    }
+  }
+  .showcase-wrapper {
+    background-color: $zircon;
+  }
+  .three-images-wrapper {
+    background-color: $zircon;
+  }
+  .textWithCta-wrapper {
+    background-color: $zircon;
+  }
+  &.strong-dark {
+    .textWithCta-wrapper {
+      background-image: linear-gradient($shuttle-grey, $maire);
+      color: $white;
+    }
+    .textWithCta-title {
+      color: $white;
+    }
+  }
+  .youTubeCarousel-wrapper {
+    background-color: $zircon;
+  }
+  .cardArrangedVertically-wrapper {
+    background-color: $zircon;
+  }
+  .squaredImageSliderWithText-wrapper {
+    background-color: $zircon;
+  }
+}
+
+.video-player {
+  color: transparent;
+  background: transparent;
+  border: transparent;
+  // If the video isn't loaded you won't see anything
+}
+
+/* ----- Datepicker customisation ----- */
+#ui-datepicker-div {
+  width: 90%;
+  @include medium() {
+    width: 44%;
+  }
+  @include large() {
+    width: 20%;
+  }
+}
+.ui-datepicker .ui-datepicker-header {
+  background: $fire-engine-red;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+  display: none;
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 1px solid $fire-engine-red !important;
+  background: $fire-engine-red !important;
+  color: $white !important;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid $shuttle-grey !important;
+  background: $shuttle-grey !important;
+  font-weight: normal;
+  color: $white !important;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: none !important;
+}
