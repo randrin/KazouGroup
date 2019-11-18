@@ -156,7 +156,7 @@
 <div class="f-item-group" id="form">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Form</h2>
+		<h2 class="kazou-red-subtitle f-item-heading">Form</h2>
 		<div class="f-item-controls">
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
@@ -167,19 +167,24 @@
 	</div><div class="f-item-preview">
 	<form action="">
 	<div>
-		<label for="textInput">Text input</label>
-		<input type="text" id="textInput" /> </div>
+		<div class="row expanded collapse">
+			<div class="medium-6 large-6 small-10 columns">
+				<label for="kazou-text-input" class="kazou-form-label">Label Name *</label>
+				<input type="text" id="kazou-text-input" name="kazou-text-input" class="kazou-form-input" />
+			</div>
+		</div>
+	</div>
 	<div class="row expanded collapse">
-		<div class="column large-3">
+		<div class="columns small-12 medium-3 large-3">
 			<button type="submit" class="kazou-button grey-btn">submit</button>
 		</div>
-		<div class="column large-3">
+		<div class="columns small-12 medium-3 large-3">
 			<button type="submit" class="kazou-button red-btn">submit</button>
 		</div>
-		<div class="column large-3">
+		<div class="columns small-12 medium-3 large-3">
 			<button type="submit" class="kazou-button orange-btn">submit</button>
 		</div>
-		<div class="column large-3">
+		<div class="columns small-12 medium-3 large-3">
 			<button type="submit" class="kazou-button blue-btn">submit</button>
 		</div>
 	</div>
@@ -188,19 +193,24 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;form action&#x3D;&quot;&quot;&gt;
 	&lt;div&gt;
-		&lt;label for&#x3D;&quot;textInput&quot;&gt;Text input&lt;/label&gt;
-		&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;textInput&quot; /&gt; &lt;/div&gt;
+		&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
+			&lt;div class&#x3D;&quot;medium-6 large-6 small-10 columns&quot;&gt;
+				&lt;label for&#x3D;&quot;kazou-text-input&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Label Name *&lt;/label&gt;
+				&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;kazou-text-input&quot; name&#x3D;&quot;kazou-text-input&quot; class&#x3D;&quot;kazou-form-input&quot; /&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 	&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
-		&lt;div class&#x3D;&quot;column large-3&quot;&gt;
+		&lt;div class&#x3D;&quot;columns small-12 medium-3 large-3&quot;&gt;
 			&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;kazou-button grey-btn&quot;&gt;submit&lt;/button&gt;
 		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;column large-3&quot;&gt;
+		&lt;div class&#x3D;&quot;columns small-12 medium-3 large-3&quot;&gt;
 			&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;kazou-button red-btn&quot;&gt;submit&lt;/button&gt;
 		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;column large-3&quot;&gt;
+		&lt;div class&#x3D;&quot;columns small-12 medium-3 large-3&quot;&gt;
 			&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;kazou-button orange-btn&quot;&gt;submit&lt;/button&gt;
 		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;column large-3&quot;&gt;
+		&lt;div class&#x3D;&quot;columns small-12 medium-3 large-3&quot;&gt;
 			&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;kazou-button blue-btn&quot;&gt;submit&lt;/button&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
