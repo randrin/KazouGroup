@@ -86,14 +86,26 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/assets/toolkit/scripts/commons/kazouKit.js":
+/*!********************************************************!*\
+  !*** ./src/assets/toolkit/scripts/commons/kazouKit.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("$(\".kazou-toggle-password\").click(function () {\n  $(this).toggleClass(\"kazou-toggle-password-unlock\");\n  var input = $($(this).attr(\"toggle\"));\n\n  if (input.attr(\"type\") == \"password\") {\n    input.attr(\"type\", \"text\");\n  } else {\n    input.attr(\"type\", \"password\");\n  }\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXNzZXRzL3Rvb2xraXQvc2NyaXB0cy9jb21tb25zL2them91S2l0LmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2Fzc2V0cy90b29sa2l0L3NjcmlwdHMvY29tbW9ucy9rYXpvdUtpdC5qcz9jZGYwIl0sInNvdXJjZXNDb250ZW50IjpbIiQoXCIua2F6b3UtdG9nZ2xlLXBhc3N3b3JkXCIpLmNsaWNrKGZ1bmN0aW9uICgpIHtcclxuICAkKHRoaXMpLnRvZ2dsZUNsYXNzKFwia2F6b3UtdG9nZ2xlLXBhc3N3b3JkLXVubG9ja1wiKTtcclxuICB2YXIgaW5wdXQgPSAkKCQodGhpcykuYXR0cihcInRvZ2dsZVwiKSk7XHJcbiAgaWYgKGlucHV0LmF0dHIoXCJ0eXBlXCIpID09IFwicGFzc3dvcmRcIikge1xyXG4gICAgaW5wdXQuYXR0cihcInR5cGVcIiwgXCJ0ZXh0XCIpO1xyXG4gIH0gZWxzZSB7XHJcbiAgICBpbnB1dC5hdHRyKFwidHlwZVwiLCBcInBhc3N3b3JkXCIpO1xyXG4gIH1cclxufSk7Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/assets/toolkit/scripts/commons/kazouKit.js\n");
+
+/***/ }),
+
 /***/ "./src/assets/toolkit/scripts/toolkit.js":
 /*!***********************************************!*\
   !*** ./src/assets/toolkit/scripts/toolkit.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("/**\r\n * KazouGroup Toolkit JavaScript\r\n *///# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXNzZXRzL3Rvb2xraXQvc2NyaXB0cy90b29sa2l0LmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2Fzc2V0cy90b29sa2l0L3NjcmlwdHMvdG9vbGtpdC5qcz9jMzJiIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBLYXpvdUdyb3VwIFRvb2xraXQgSmF2YVNjcmlwdFxyXG4gKi9cclxuIl0sIm1hcHBpbmdzIjoiQUFBQTs7QSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/assets/toolkit/scripts/toolkit.js\n");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _commons_kazouKit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commons/kazouKit */ \"./src/assets/toolkit/scripts/commons/kazouKit.js\");\n/* harmony import */ var _commons_kazouKit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_commons_kazouKit__WEBPACK_IMPORTED_MODULE_0__);\n/**\r\n * KazouGroup Toolkit JavaScript\r\n */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvYXNzZXRzL3Rvb2xraXQvc2NyaXB0cy90b29sa2l0LmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2Fzc2V0cy90b29sa2l0L3NjcmlwdHMvdG9vbGtpdC5qcz9jMzJiIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBLYXpvdUdyb3VwIFRvb2xraXQgSmF2YVNjcmlwdFxyXG4gKi9cclxuaW1wb3J0IGthem91S2l0IGZyb20gICAgICAgICAgICAgICAgICAgICAgICAgICBcIi4vY29tbW9ucy9rYXpvdUtpdFwiOyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBO0FBQUE7OzsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/assets/toolkit/scripts/toolkit.js\n");
 
 /***/ })
 

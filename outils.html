@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
   <!-- /KazouGroup Toolkit Styles -->
 </head>
+
 <body>
 
   <!-- fabricator icons -->
@@ -52,7 +54,7 @@
   		</div>
   	</div>
   
-  	<ul>
+  	<ul class="f-menu-container">
   		<li>
   			<a href="index.html" class="f-menu__heading">Overview</a>
   		</li>
@@ -60,10 +62,10 @@
   			<a href="composants.html" class="f-menu__heading">Composants</a>
   			<ul>
   				<li>
-  					<a href="composants.html#04-kazouTextWithCta">Kazoutextwithcta</a>
+  					<a href="composants.html#04-kazou-text-with-cta">Kazou Text With Cta</a>
   				</li>
   				<li>
-  					<a href="composants.html#28-kazouTypeCta">Kazoutypecta</a>
+  					<a href="composants.html#28-kazou-type-cta">Kazou Type Cta</a>
   				</li>
   			</ul>
   		</li>
@@ -81,6 +83,9 @@
   				</li>
   				<li>
   					<a href="outils.html#paragraph">Paragraph</a>
+  				</li>
+  				<li>
+  					<a href="outils.html#password-input">Password Input</a>
   				</li>
   				<li>
   					<a href="outils.html#radio">Radio</a>
@@ -112,10 +117,10 @@
   			<a href="composants.html" class="f-menu__heading">Composants</a>
   			<ul>
   				<li>
-  					<a href="composants/04-kazouTextWithCta.html" target="_blank">04 Kazoutextwithcta</a>
+  					<a href="composants/04-kazou-text-with-cta.html" target="_blank">04 Kazou Text With Cta</a>
   				</li>
   				<li>
-  					<a href="composants/28-kazouTypeCta.html" target="_blank">28 Kazoutypecta</a>
+  					<a href="composants/28-kazou-type-cta.html" target="_blank">28 Kazou Type Cta</a>
   				</li>
   			</ul>
   		</li>
@@ -147,7 +152,6 @@
     		</svg>
     	</div>
     </div>
-
 
     
 <h1 data-f-toggle="labels" class="kazou-orange-title kazou-uppercase">Outils</h1>
@@ -216,14 +220,60 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<label>
-	<input type="checkbox" /> Checkbox
-</label>
+	<div class="row expanded collapse">
+	<div class="columns large-3 medium-6">
+		<div class="kazou-checkbox-input">
+			<input type="checkbox" name="kazou-checkbox-name" value="kazou-checkbox-1" id="kazou-checkbox-1" required />
+			<label for="kazou-checkbox-1" class="kazou-form-label">Kazou Checkbox 1</label>
+		</div>
+	</div>
+	<div class="columns large-3 medium-6">
+		<div class="kazou-checkbox-input">
+			<input type="checkbox" name="kazou-checkbox-name" value="kazou-checkbox-2" id="kazou-checkbox-2" />
+			<label for="kazou-checkbox-2" class="kazou-form-label">Kazou Checkbox 2</label>
+		</div>
+	</div>
+	<div class="columns large-3 medium-6">
+		<div class="kazou-checkbox-input">
+			<input type="checkbox" name="kazou-checkbox-name" value="kazou-checkbox-3" id="kazou-checkbox-3" required />
+			<label for="kazou-checkbox-3" class="kazou-form-label">Kazou Checkbox 3</label>
+		</div>
+	</div>
+	<div class="columns large-3 medium-6">
+		<div class="kazou-checkbox-input">
+			<input type="checkbox" name="kazou-checkbox-name" value="kazou-checkbox-4" id="kazou-checkbox-4" />
+			<label for="kazou-checkbox-4" class="kazou-form-label">Kazou Checkbox 4</label>
+		</div>
+	</div>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label&gt;
-	&lt;input type&#x3D;&quot;checkbox&quot; /&gt; Checkbox
-&lt;/label&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
+	&lt;div class&#x3D;&quot;columns large-3 medium-6&quot;&gt;
+		&lt;div class&#x3D;&quot;kazou-checkbox-input&quot;&gt;
+			&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;kazou-checkbox-name&quot; value&#x3D;&quot;kazou-checkbox-1&quot; id&#x3D;&quot;kazou-checkbox-1&quot; required /&gt;
+			&lt;label for&#x3D;&quot;kazou-checkbox-1&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Kazou Checkbox 1&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;columns large-3 medium-6&quot;&gt;
+		&lt;div class&#x3D;&quot;kazou-checkbox-input&quot;&gt;
+			&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;kazou-checkbox-name&quot; value&#x3D;&quot;kazou-checkbox-2&quot; id&#x3D;&quot;kazou-checkbox-2&quot; /&gt;
+			&lt;label for&#x3D;&quot;kazou-checkbox-2&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Kazou Checkbox 2&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;columns large-3 medium-6&quot;&gt;
+		&lt;div class&#x3D;&quot;kazou-checkbox-input&quot;&gt;
+			&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;kazou-checkbox-name&quot; value&#x3D;&quot;kazou-checkbox-3&quot; id&#x3D;&quot;kazou-checkbox-3&quot; required /&gt;
+			&lt;label for&#x3D;&quot;kazou-checkbox-3&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Kazou Checkbox 3&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;columns large-3 medium-6&quot;&gt;
+		&lt;div class&#x3D;&quot;kazou-checkbox-input&quot;&gt;
+			&lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;kazou-checkbox-name&quot; value&#x3D;&quot;kazou-checkbox-4&quot; id&#x3D;&quot;kazou-checkbox-4&quot; /&gt;
+			&lt;label for&#x3D;&quot;kazou-checkbox-4&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Kazou Checkbox 4&lt;/label&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
@@ -246,18 +296,26 @@
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<ol>
-	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-	<li>Aliquam tincidunt mauris eu risus.</li>
-	<li>Vestibulum auctor dapibus neque.</li>
-</ol>
+	<div class="row expanded collapse">
+	<div class="columns">
+		<ol class="kazou-container-list">
+			<li class="kazou-list-orderd">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			<li class="kazou-list-orderd">Aliquam tincidunt mauris eu risus.</li>
+			<li class="kazou-list-orderd">Vestibulum auctor dapibus neque.</li>
+		</ol>
+	</div>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ol&gt;
-	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
+	&lt;div class&#x3D;&quot;columns&quot;&gt;
+		&lt;ol class&#x3D;&quot;kazou-container-list&quot;&gt;
+			&lt;li class&#x3D;&quot;kazou-list-orderd&quot;&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+			&lt;li class&#x3D;&quot;kazou-list-orderd&quot;&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+			&lt;li class&#x3D;&quot;kazou-list-orderd&quot;&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 		</div>
@@ -272,18 +330,26 @@
 					</span>
 				</div>
 			</div><div class="f-item-preview">
-	<ul>
-	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-	<li>Aliquam tincidunt mauris eu risus.</li>
-	<li>Vestibulum auctor dapibus neque.</li>
-</ul>
+	<div class="row expanded collapse">
+	<div class="columns">
+		<ul>
+			<li class="kazou-list-unorderd">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			<li class="kazou-list-unorderd">Aliquam tincidunt mauris eu risus.</li>
+			<li class="kazou-list-unorderd">Vestibulum auctor dapibus neque.</li>
+		</ul>
+	</div>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ul&gt;
-	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
+	&lt;div class&#x3D;&quot;columns&quot;&gt;
+		&lt;ul&gt;
+			&lt;li class&#x3D;&quot;kazou-list-unorderd&quot;&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+			&lt;li class&#x3D;&quot;kazou-list-unorderd&quot;&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+			&lt;li class&#x3D;&quot;kazou-list-unorderd&quot;&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 		</div>
@@ -323,6 +389,58 @@
 </div>
 
 
+<div class="f-item-group" id="password-input">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="kazou-red-subtitle f-item-heading">Password Input</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-preview">
+	<div class="row expanded collapse">
+	<div class="small-12 medium-6 large-6 columns">
+		<label for="kazou-password-input" class="kazou-form-label">Password <span class="kazou-form-field-required">*</span></label>
+		<div class="kazou-container-password-input">
+			<span toggle="#kazou-password-input" class="kazou-icon-field kazou-toggle-password"></span>
+			<input type="password" id="kazou-password-input" name="kazou-password-input" class="kazou-form-input" />
+		</div>
+	</div>
+	<div class="small-12 medium-6 large-6 columns">
+		<label for="kazou-confirm-password-input" class="kazou-form-label">Confirmation Password <span class="kazou-form-field-required">*</span></label>
+		<div class="kazou-container-password-input">
+			<span toggle="#kazou-confirm-password-input" class="kazou-icon-field kazou-toggle-password"></span>
+			<input type="password" id="kazou-confirm-password-input" name="kazou-confirm-password-input" class="kazou-form-input" />
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
+	&lt;div class&#x3D;&quot;small-12 medium-6 large-6 columns&quot;&gt;
+		&lt;label for&#x3D;&quot;kazou-password-input&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Password &lt;span class&#x3D;&quot;kazou-form-field-required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+		&lt;div class&#x3D;&quot;kazou-container-password-input&quot;&gt;
+			&lt;span toggle&#x3D;&quot;#kazou-password-input&quot; class&#x3D;&quot;kazou-icon-field kazou-toggle-password&quot;&gt;&lt;/span&gt;
+			&lt;input type&#x3D;&quot;password&quot; id&#x3D;&quot;kazou-password-input&quot; name&#x3D;&quot;kazou-password-input&quot; class&#x3D;&quot;kazou-form-input&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;small-12 medium-6 large-6 columns&quot;&gt;
+		&lt;label for&#x3D;&quot;kazou-confirm-password-input&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Confirmation Password &lt;span class&#x3D;&quot;kazou-form-field-required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+		&lt;div class&#x3D;&quot;kazou-container-password-input&quot;&gt;
+			&lt;span toggle&#x3D;&quot;#kazou-confirm-password-input&quot; class&#x3D;&quot;kazou-icon-field kazou-toggle-password&quot;&gt;&lt;/span&gt;
+			&lt;input type&#x3D;&quot;password&quot; id&#x3D;&quot;kazou-confirm-password-input&quot; name&#x3D;&quot;kazou-confirm-password-input&quot; class&#x3D;&quot;kazou-form-input&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="radio">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -336,25 +454,25 @@
 		</div>
 	</div><div class="f-item-preview">
 	<div class="row expanded collapse">
-	<div class="columns large-3 medium-3">
+	<div class="columns large-3 medium-6">
 		<div class="kazou-radio-input">
 			<input type="radio" name="kazou-radio-name" value="kazou-radio-1" id="kazou-radio-1" />
 			<label for="kazou-radio-1" class="kazou-form-label">Kazou Radio 1</label>
 		</div>
 	</div>
-	<div class="columns large-3 medium-3">
+	<div class="columns large-3 medium-6">
 		<div class="kazou-radio-input">
 			<input type="radio" name="kazou-radio-name" value="kazou-radio-2" id="kazou-radio-2" />
 			<label for="kazou-radio-2" class="kazou-form-label">Kazou Radio 2</label>
 		</div>
 	</div>
-	<div class="columns large-3 medium-3">
+	<div class="columns large-3 medium-6">
 		<div class="kazou-radio-input">
 			<input type="radio" name="kazou-radio-name" value="kazou-radio-3" id="kazou-radio-3" />
 			<label for="kazou-radio-3" class="kazou-form-label">Kazou Radio 3</label>
 		</div>
 	</div>
-	<div class="columns large-3 medium-3">
+	<div class="columns large-3 medium-6">
 		<div class="kazou-radio-input">
 			<input type="radio" name="kazou-radio-name" value="kazou-radio-4" id="kazou-radio-4" />
 			<label for="kazou-radio-4" class="kazou-form-label">Kazou Radio 4</label>
@@ -364,25 +482,25 @@
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
-	&lt;div class&#x3D;&quot;columns large-3 medium-3&quot;&gt;
+	&lt;div class&#x3D;&quot;columns large-3 medium-6&quot;&gt;
 		&lt;div class&#x3D;&quot;kazou-radio-input&quot;&gt;
 			&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;kazou-radio-name&quot; value&#x3D;&quot;kazou-radio-1&quot; id&#x3D;&quot;kazou-radio-1&quot; /&gt;
 			&lt;label for&#x3D;&quot;kazou-radio-1&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Kazou Radio 1&lt;/label&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;columns large-3 medium-3&quot;&gt;
+	&lt;div class&#x3D;&quot;columns large-3 medium-6&quot;&gt;
 		&lt;div class&#x3D;&quot;kazou-radio-input&quot;&gt;
 			&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;kazou-radio-name&quot; value&#x3D;&quot;kazou-radio-2&quot; id&#x3D;&quot;kazou-radio-2&quot; /&gt;
 			&lt;label for&#x3D;&quot;kazou-radio-2&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Kazou Radio 2&lt;/label&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;columns large-3 medium-3&quot;&gt;
+	&lt;div class&#x3D;&quot;columns large-3 medium-6&quot;&gt;
 		&lt;div class&#x3D;&quot;kazou-radio-input&quot;&gt;
 			&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;kazou-radio-name&quot; value&#x3D;&quot;kazou-radio-3&quot; id&#x3D;&quot;kazou-radio-3&quot; /&gt;
 			&lt;label for&#x3D;&quot;kazou-radio-3&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Kazou Radio 3&lt;/label&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;columns large-3 medium-3&quot;&gt;
+	&lt;div class&#x3D;&quot;columns large-3 medium-6&quot;&gt;
 		&lt;div class&#x3D;&quot;kazou-radio-input&quot;&gt;
 			&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;kazou-radio-name&quot; value&#x3D;&quot;kazou-radio-4&quot; id&#x3D;&quot;kazou-radio-4&quot; /&gt;
 			&lt;label for&#x3D;&quot;kazou-radio-4&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Kazou Radio 4&lt;/label&gt;
@@ -407,22 +525,38 @@
 			</span>
 		</div>
 	</div><div class="f-item-preview">
-	<select name="" id="">
-	<option value="">Option 1</option>
-	<option value="">Option 2</option>
-	<option value="">Option 3</option>
-	<option value="">Option 4</option>
-	<option value="">Option 5</option>
-</select>
+	<div class="row expanded collapse">
+	<div class="medium-6 large-6 small-10 columns">
+		<label for="kazou-select-input" class="kazou-form-label">Label Name <span class="kazou-form-field-required">*</span></label>
+		<div class="kazou-select-rounded kazou-select-rounded-full">
+			<select id="kazou-select-input" name="kazou-select-input" class="kazou-select-input" required>
+				<option value="">Select</option>
+				<option value="option 1">option 1</option>
+				<option value="option 2">option 2</option>
+				<option value="option 3">option 3</option>
+				<option value="option 4">option 4</option>
+				<option value="option 5">option 5</option>
+			</select>
+		</div>
+	</div>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;select name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
-	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
-&lt;/select&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
+	&lt;div class&#x3D;&quot;medium-6 large-6 small-10 columns&quot;&gt;
+		&lt;label for&#x3D;&quot;kazou-select-input&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Label Name &lt;span class&#x3D;&quot;kazou-form-field-required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+		&lt;div class&#x3D;&quot;kazou-select-rounded kazou-select-rounded-full&quot;&gt;
+			&lt;select id&#x3D;&quot;kazou-select-input&quot; name&#x3D;&quot;kazou-select-input&quot; class&#x3D;&quot;kazou-select-input&quot; required&gt;
+				&lt;option value&#x3D;&quot;&quot;&gt;Select&lt;/option&gt;
+				&lt;option value&#x3D;&quot;option 1&quot;&gt;option 1&lt;/option&gt;
+				&lt;option value&#x3D;&quot;option 2&quot;&gt;option 2&lt;/option&gt;
+				&lt;option value&#x3D;&quot;option 3&quot;&gt;option 3&lt;/option&gt;
+				&lt;option value&#x3D;&quot;option 4&quot;&gt;option 4&lt;/option&gt;
+				&lt;option value&#x3D;&quot;option 5&quot;&gt;option 5&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
@@ -538,16 +672,16 @@
 		</div>
 	</div><div class="f-item-preview">
 	<div class="row expanded collapse">
-	<div class="medium-6 large-6 small-10 columns">
-		<label for="kazou-text-input" class="kazou-form-label">Label Name *</label>
+	<div class="columns medium-6 large-6">
+		<label for="kazou-text-input" class="kazou-form-label">Label Name <span class="kazou-form-field-required">*</span></label>
 		<input type="text" id="kazou-text-input" name="kazou-text-input" class="kazou-form-input" />
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
-	&lt;div class&#x3D;&quot;medium-6 large-6 small-10 columns&quot;&gt;
-		&lt;label for&#x3D;&quot;kazou-text-input&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Label Name *&lt;/label&gt;
+	&lt;div class&#x3D;&quot;columns medium-6 large-6&quot;&gt;
+		&lt;label for&#x3D;&quot;kazou-text-input&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Label Name &lt;span class&#x3D;&quot;kazou-form-field-required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
 		&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;kazou-text-input&quot; name&#x3D;&quot;kazou-text-input&quot; class&#x3D;&quot;kazou-form-input&quot; /&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -571,6 +705,7 @@
 	</div><div class="f-item-preview">
 	<div class="row expanded collapse">
 	<div class="medium-6 large-6 small-10 columns">
+		<label for="kazou-textarea" class="kazou-form-label">Enter your message <span class="kazou-form-field-required">*</span></label>
 		<textarea name="kazou-textarea" id="kazou-textarea" cols="30" rows="5" class="kazou-form-textarea"></textarea>
 	</div>
 </div>
@@ -578,6 +713,7 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
 	&lt;div class&#x3D;&quot;medium-6 large-6 small-10 columns&quot;&gt;
+		&lt;label for&#x3D;&quot;kazou-textarea&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Enter your message &lt;span class&#x3D;&quot;kazou-form-field-required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
 		&lt;textarea name&#x3D;&quot;kazou-textarea&quot; id&#x3D;&quot;kazou-textarea&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;5&quot; class&#x3D;&quot;kazou-form-textarea&quot;&gt;&lt;/textarea&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -587,14 +723,15 @@
 </div>
 
 
-
   </div>
   <script src="assets/fabricator/scripts/f.js"></script>
-
+  <!-- JQuery scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- /JQuery scripts -->
   <!-- toolkit scripts -->
   <script src="assets/toolkit/scripts/toolkit.js"></script>
   <!-- /toolkit scripts -->
-
 </body>
 
 </html>

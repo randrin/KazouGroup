@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
   <!-- /KazouGroup Toolkit Styles -->
 </head>
+
 <body>
 
   <!-- fabricator icons -->
@@ -52,7 +54,7 @@
   		</div>
   	</div>
   
-  	<ul>
+  	<ul class="f-menu-container">
   		<li>
   			<a href="index.html" class="f-menu__heading">Overview</a>
   		</li>
@@ -60,10 +62,10 @@
   			<a href="composants.html" class="f-menu__heading">Composants</a>
   			<ul>
   				<li>
-  					<a href="composants.html#04-kazouTextWithCta">Kazoutextwithcta</a>
+  					<a href="composants.html#04-kazou-text-with-cta">Kazou Text With Cta</a>
   				</li>
   				<li>
-  					<a href="composants.html#28-kazouTypeCta">Kazoutypecta</a>
+  					<a href="composants.html#28-kazou-type-cta">Kazou Type Cta</a>
   				</li>
   			</ul>
   		</li>
@@ -81,6 +83,9 @@
   				</li>
   				<li>
   					<a href="outils.html#paragraph">Paragraph</a>
+  				</li>
+  				<li>
+  					<a href="outils.html#password-input">Password Input</a>
   				</li>
   				<li>
   					<a href="outils.html#radio">Radio</a>
@@ -112,10 +117,10 @@
   			<a href="composants.html" class="f-menu__heading">Composants</a>
   			<ul>
   				<li>
-  					<a href="composants/04-kazouTextWithCta.html" target="_blank">04 Kazoutextwithcta</a>
+  					<a href="composants/04-kazou-text-with-cta.html" target="_blank">04 Kazou Text With Cta</a>
   				</li>
   				<li>
-  					<a href="composants/28-kazouTypeCta.html" target="_blank">28 Kazoutypecta</a>
+  					<a href="composants/28-kazou-type-cta.html" target="_blank">28 Kazou Type Cta</a>
   				</li>
   			</ul>
   		</li>
@@ -148,7 +153,6 @@
     	</div>
     </div>
 
-
     
 <h1 data-f-toggle="labels" class="kazou-orange-title kazou-uppercase">Structures</h1>
 
@@ -168,8 +172,8 @@
 	<form action="">
 	<div>
 		<div class="row expanded collapse">
-			<div class="medium-6 large-6 small-10 columns">
-				<label for="kazou-text-input" class="kazou-form-label">Label Name *</label>
+			<div class="columns medium-6 large-6">
+				<label for="kazou-text-input" class="kazou-form-label">Label Name <span class="kazou-form-field-required">*</span></label>
 				<input type="text" id="kazou-text-input" name="kazou-text-input" class="kazou-form-input" />
 			</div>
 		</div>
@@ -194,8 +198,8 @@
 	<pre><code class="language-markup">&lt;form action&#x3D;&quot;&quot;&gt;
 	&lt;div&gt;
 		&lt;div class&#x3D;&quot;row expanded collapse&quot;&gt;
-			&lt;div class&#x3D;&quot;medium-6 large-6 small-10 columns&quot;&gt;
-				&lt;label for&#x3D;&quot;kazou-text-input&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Label Name *&lt;/label&gt;
+			&lt;div class&#x3D;&quot;columns medium-6 large-6&quot;&gt;
+				&lt;label for&#x3D;&quot;kazou-text-input&quot; class&#x3D;&quot;kazou-form-label&quot;&gt;Label Name &lt;span class&#x3D;&quot;kazou-form-field-required&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
 				&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;kazou-text-input&quot; name&#x3D;&quot;kazou-text-input&quot; class&#x3D;&quot;kazou-form-input&quot; /&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;
@@ -222,14 +226,15 @@
 
 
 
-
   </div>
   <script src="assets/fabricator/scripts/f.js"></script>
-
+  <!-- JQuery scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- /JQuery scripts -->
   <!-- toolkit scripts -->
   <script src="assets/toolkit/scripts/toolkit.js"></script>
   <!-- /toolkit scripts -->
-
 </body>
 
 </html>
